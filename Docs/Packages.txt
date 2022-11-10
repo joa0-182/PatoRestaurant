@@ -27,5 +27,6 @@ Para realizar o scaffolding do Identity
     dotnet aspnet-codegenerator Identity --listFiles
 -- 1° Passo - 
     dotnet add package Microsoft.VisualStudio.Web.codegenerator.Design
--- 2° Passo - Determinar as páginas 
-    dotnet aspnet-codegenerator identity -dc PatoRestaurant.Data.ApplicationDbContext -u PatoRestaurant.Models.ApplicationUser --files "Account.Login;Account.Logout;Account.Register"
+-- 2° Passo - Determinar as páginas
+
+dotnet aspnet-codegenerator identity -dc PatoRestaurant.DataApplicationDbContext --files "Account.AccessDenied;Account.Login;Account.Logout;Account.Register"

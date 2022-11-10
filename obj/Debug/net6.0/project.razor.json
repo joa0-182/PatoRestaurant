@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\PatoRestaurant.csproj",
+  "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\PatoRestaurant.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,78 +16298,118 @@
   "RootNamespace": "PatoRestaurant",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Reservation.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Reservation.cshtml",
       "TargetPath": "Views\\Home\\Reservation.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\About.cshtml",
-      "TargetPath": "Views\\Home\\About.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Blog.cshtml",
-      "TargetPath": "Views\\Home\\Blog.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Blog.cshtml",
+      "TargetPath": "Views\\Home\\Blog.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Gallery.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Gallery.cshtml",
       "TargetPath": "Views\\Home\\Gallery.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Views\\Home\\Menu.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Menu.cshtml",
       "TargetPath": "Views\\Home\\Menu.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\etec\\Desktop\\PatoRestaurant\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\etec\\Documents\\PatoRestaurant\\Views\\Admin\\Index.cshtml",
+      "TargetPath": "Views\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
