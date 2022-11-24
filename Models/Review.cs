@@ -21,11 +21,10 @@ namespace PatoRestaurant.Models
 
         [Display(Name = "Data da Avaliação")]
         public DateTime ReviewDate { get; set; } = DateTime.Now;
-    
+
         [Display(Name = "Imagem")]
         [StringLength(400)]
         public string Image { get; set; }
-
 
         [Display(Name = "Nota")]
         [Required(ErrorMessage = "Informe a {0}")]

@@ -20,10 +20,10 @@ namespace PatoRestaurant.Models
         [StringLength(2000, ErrorMessage = "A {0} deve possuir no máximo {1} caracteres")]
         public string Description { get; set; }
 
-        [Display(Name = "Data do evento")]
-        [Required(ErrorMessage = "Informe o {0}")]
-        public DateTime EventData { get; set; }
-    
+        [Display(Name = "Data do Evento")]
+        [Required(ErrorMessage = "Informe a {0}")]
+        public DateTime EventDate { get; set; }
+
         [Display(Name = "Imagem")]
         [StringLength(400)]
         public string Image { get; set; }

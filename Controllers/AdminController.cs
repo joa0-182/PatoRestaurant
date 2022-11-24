@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace PatoRestaurant.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Administrador")]
     public class AdminController : Controller
     {
         private readonly ILogger<AdminController> _logger;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Documents\\PatoRestaurant\\PatoRestaurant.csproj": {}
+    "Q:\\Professores\\Gallo\\2022\\2º DS\\PW\\Turma A\\PatoRestaurant\\PatoRestaurant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Documents\\PatoRestaurant\\PatoRestaurant.csproj": {
+    "Q:\\Professores\\Gallo\\2022\\2º DS\\PW\\Turma A\\PatoRestaurant\\PatoRestaurant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Documents\\PatoRestaurant\\PatoRestaurant.csproj",
+        "projectUniqueName": "Q:\\Professores\\Gallo\\2022\\2º DS\\PW\\Turma A\\PatoRestaurant\\PatoRestaurant.csproj",
         "projectName": "PatoRestaurant",
-        "projectPath": "C:\\Users\\etec\\Documents\\PatoRestaurant\\PatoRestaurant.csproj",
-        "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\etec\\Documents\\PatoRestaurant\\obj\\",
+        "projectPath": "Q:\\Professores\\Gallo\\2022\\2º DS\\PW\\Turma A\\PatoRestaurant\\PatoRestaurant.csproj",
+        "packagesPath": "C:\\Users\\jose.gallo\\.nuget\\packages\\",
+        "outputPath": "Q:\\Professores\\Gallo\\2022\\2º DS\\PW\\Turma A\\PatoRestaurant\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jose.gallo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
