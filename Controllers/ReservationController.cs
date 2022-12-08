@@ -1,29 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using PatoRestaurant.Data;
-using PatoRestaurant.Models;
+using PatoRestaurant.ViewModels;
 
 namespace PatoRestaurant.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class ReservationController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IEmailSender _emailSender;
 
-        public ReservationController(ApplicationDbContext context)
+        public ReservationController(ApplicationDbContext context, IEmailSender emailSender)
         {
             _context = context;
+            _emailSender = emailSender;
         }
 
         // GET: Reservation
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var applicationDbContext = _context.Reservations.Include(r => r.StatusReservation);
-            return View(await applicationDbContext.ToListAsync());
+            return View();
+        }
+
+        // GET: Reservation
+        public async Task<IActionResult> GetAll()
+        {
+            return Json(new { data = await _context.Reservations
+                .Include(r => r.StatusReservation)
+                .ToListAsync() });
         }
 
         // GET: Reservation/Details/5
@@ -67,6 +74,35 @@ namespace PatoRestaurant.Controllers
             }
             ViewData["StatusReservationId"] = new SelectList(_context.StatusReservations, "Id", "Name", reservation.StatusReservationId);
             return View(reservation);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CustomerRequest(ReservationVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var reservation = new Reservation()
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Phone = model.Phone,
+                    ReservationDate = DateTime.Parse(model.ReservationDate + " " + model.ReservationTime),
+                    Guests = model.Guests
+                };
+                reservation.StatusReservationId = 1;
+                reservation.CreatedDate = DateTime.Now;
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+                string mensagem = $"Solicitação de Reserva Recebida<br>"
+                                + $"Nome...: {model.Name}<br>"
+                                + $"Celular: {model.Phone}<br>"
+                                + $"Data...: {model.ReservationDate}<br>";
+                await _emailSender.SendEmailAsync("gallojunior@gmail.com", "Reserva de Mesa", mensagem);
+                return Json(new { success = true, message = "Sua reserva foi recebida e entraremos em contato com breve!!!" });
+            }
+            return Json(new { success = false, message = "Sua reserva não foi realizada, verifique seus dados!!" });
         }
 
         // GET: Reservation/Edit/5
@@ -122,42 +158,27 @@ namespace PatoRestaurant.Controllers
             return View(reservation);
         }
 
-        // GET: Reservation/Delete/5
+        // DELETE: Reservation/Delete/5
+        [HttpDelete]
         public async Task<IActionResult> Delete(ushort? id)
         {
-            if (id == null || _context.Reservations == null)
-            {
-                return NotFound();
-            }
-
-            var reservation = await _context.Reservations
-                .Include(r => r.StatusReservation)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var reservation = await _context.Reservations.FirstOrDefaultAsync(m => m.Id == id);
             if (reservation == null)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Reserva não encontrada" });
             }
 
-            return View(reservation);
-        }
-
-        // POST: Reservation/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(ushort id)
-        {
-            if (_context.Reservations == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
-            }
-            var reservation = await _context.Reservations.FindAsync(id);
-            if (reservation != null)
+            try
             {
                 _context.Reservations.Remove(reservation);
+                await _context.SaveChangesAsync();
             }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            catch
+            {
+                return Json(new { success = false, message = "Ocorreu um problema inesperado! Avise ao Suporte!" });
+            }
+
+            return Json(new { success = true, message = "Reserva Excluída com Sucesso!" });
         }
 
         private bool ReservationExists(ushort id)

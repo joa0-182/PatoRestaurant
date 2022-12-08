@@ -47,15 +47,15 @@ namespace PatoRestaurant.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f241a9db-4fda-4e0d-ad05-e6a81349a126",
-                            ConcurrencyStamp = "f2cd7dc7-3421-4301-a9d9-8fe8854483b7",
+                            Id = "4541e22d-40b1-47ea-b38f-290f5a70dc4f",
+                            ConcurrencyStamp = "811fcda3-feb2-457f-b82f-f22c9dafe524",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "3fa60623-ab36-43ea-a6af-e1e91f71de00",
-                            ConcurrencyStamp = "65a663ad-08b4-4e91-8b3d-aef5f6086a94",
+                            Id = "0d48efda-3e41-4655-ba06-765d4ab7afec",
+                            ConcurrencyStamp = "554f118b-afbf-430e-b105-8b5c4a44f4d7",
                             Name = "Usuário",
                             NormalizedName = "USUÁRIO"
                         });
@@ -146,8 +146,8 @@ namespace PatoRestaurant.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7aef6862-6409-4cd1-94d7-7615450aaffc",
-                            RoleId = "f241a9db-4fda-4e0d-ad05-e6a81349a126"
+                            UserId = "385134ab-36b3-4f7a-a19b-429aa1bc7646",
+                            RoleId = "4541e22d-40b1-47ea-b38f-290f5a70dc4f"
                         });
                 });
 
@@ -245,21 +245,21 @@ namespace PatoRestaurant.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7aef6862-6409-4cd1-94d7-7615450aaffc",
+                            Id = "385134ab-36b3-4f7a-a19b-429aa1bc7646",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "feae7246-dd61-412c-a04d-caf658d2f9ce",
-                            Email = "admin@pato.com",
+                            ConcurrencyStamp = "1785c28b-8f1a-4907-aafe-892de7887566",
+                            Email = "admin@patorestaurant.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
-                            Name = "José Antonio Gallo Junior",
-                            NormalizedEmail = "ADMIN@PATO.COM",
-                            NormalizedUserName = "ADMIN@PATO.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJ8UXB7euZjOAcYA4o2Jpf52ArbCJnyCfRs5jm7JpO9oDYLnRR9691AN7Oubpu6R+g==",
+                            Name = "Administrador",
+                            NormalizedEmail = "ADMIN@PATORESTAURANT.COM",
+                            NormalizedUserName = "ADMIN@PATORESTAURANT.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAELQ04pXH8dgkgN4lOcXMV4FwwIvaTQpm4m7veLiD97OvXJgg+PY7sn/wwVJy2bm7ww==",
                             PhoneNumberConfirmed = false,
                             ProfilePicture = "\\img\\avatar.png",
                             SecurityStamp = "48412952",
                             TwoFactorEnabled = false,
-                            UserName = "admin@pato.com"
+                            UserName = "admin@patorestaurant.com"
                         });
                 });
 
@@ -430,7 +430,6 @@ namespace PatoRestaurant.Migrations
                         .HasColumnType("smallint unsigned");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(2000)
                         .HasColumnType("varchar(2000)");
 

@@ -66,7 +66,7 @@ namespace PatoRestaurant.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Display(Name = "E-mail")]
-            [Required(ErrorMessage = "Informe seu E-mail")]
+            [Required(ErrorMessage = "Informe seu e-mail")]
             [EmailAddress(ErrorMessage = "Informe um e-mail válido")]
             public string Email { get; set; }
 
@@ -75,7 +75,7 @@ namespace PatoRestaurant.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Display(Name = "Senha")]
-            [Required(ErrorMessage = "Informe sua Senha")]
+            [Required(ErrorMessage = "Informe sua senha")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
@@ -84,7 +84,7 @@ namespace PatoRestaurant.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Display(Name = "Manter Conectado?")]
-            public bool RememberMe { get; set; }
+            public bool RememberMe { get; set; } = false;
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -131,7 +131,7 @@ namespace PatoRestaurant.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Usuário e/ou Senha Inválidos!!");
+                    ModelState.AddModelError("", "Usuário e/ou Senha inválidos!!!");
                     return Page();
                 }
             }

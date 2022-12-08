@@ -7,29 +7,31 @@ $(document).ready(function () {
 function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": {
-            "url": "/SocialEvent/GetAll"
+            "url": "/Reservation/GetAll"
         },
         "order": [[1, 'asc']],
         "columns": [
-            { "data": "name", "width": "60%" },
+            { "data": "name", "width": "30%" },
+            { "data": "phone", "width": "10%" },
             {
-                "data": "eventDate", "width": "25%", "render": function (value) {
+                "data": "reservationDate", "width": "20%", "render": function (value) {
                     if (value === null) return "";
                     return moment(value).format('DD/MM/YYYY HH:mm');
-                }
-            },
+                } },
+            { "data": "statusReservation.name", "width": "20%" },
+            { "data": "guests", "width": "5%" },
             {
                 "data": "id", "width": "15%", "bSortable": false,
                 "render": function (data) {
                     return `
                         <div class="text-xs text-secondary mb-0">
-                            <a href="/SocialEvent/Edit?id=${data}" title="Editar">
+                            <a href="/Reservation/Edit?id=${data}" title="Editar">
                                 <span class="material-icons">edit</span>
                             </a> &nbsp &nbsp
-                            <a href="/SocialEvent/Details?id=${data}" title="Detalhes">
+                            <a href="/Reservation/Details?id=${data}" title="Detalhes">
                                 <span class="material-icons">info</span>
                             </a> &nbsp &nbsp
-                            <a href="javascript:void(0)" onclick="Delete('/SocialEvent/Delete?id=${data}')" title="Excluir">
+                            <a href="javascript:void(0)" onclick="Delete('/Reservation/Delete?id=${data}')" title="Excluir">
                                 <span class="material-icons">delete</span>
                             </a> &nbsp &nbsp
                         </div>

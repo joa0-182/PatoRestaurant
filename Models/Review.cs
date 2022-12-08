@@ -8,9 +8,9 @@ namespace PatoRestaurant.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public UInt16 Id { get; set; }
-
-        [Display(Name = "Nome do Avaliador")]
+        public UInt16 Id { get; set; } 
+        
+        [Display(Name = "Nome")]
         [Required(ErrorMessage = "Informe o {0}")]
         [StringLength(60, ErrorMessage = "O {0} deve possuir no máximo {1} caracteres")]
         public string Name { get; set; }
@@ -22,12 +22,11 @@ namespace PatoRestaurant.Models
         [Display(Name = "Data da Avaliação")]
         public DateTime ReviewDate { get; set; } = DateTime.Now;
 
-        [Display(Name = "Imagem")]
+        [Display(Name = "Foto do Avaliador")]
         [StringLength(400)]
         public string Image { get; set; }
 
         [Display(Name = "Nota")]
-        [Required(ErrorMessage = "Informe a {0}")]
         public byte Rating { get; set; }
     }
 }

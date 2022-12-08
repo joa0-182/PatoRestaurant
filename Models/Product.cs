@@ -8,10 +8,10 @@ namespace PatoRestaurant.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public UInt16 Id { get; set; }
-
+        public UInt16 Id { get; set; } 
+        
         [Display(Name = "Nome")]
-        [Required(ErrorMessage = "Informe o {0}")]
+        [Required(ErrorMessage = "Informe o seu {0}")]
         [StringLength(60, ErrorMessage = "O {0} deve possuir no máximo {1} caracteres")]
         public string Name { get; set; }
 
@@ -22,7 +22,7 @@ namespace PatoRestaurant.Models
         [Display(Name = "Preço")]
         [Column(TypeName = "decimal(10,2)")]
         [Required(ErrorMessage = "Informe o {0}")]
-        [DisplayFormat(DataFormatString = "{0:C}")]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
         public decimal Price { get; set; }
 
         [Display(Name = "Data de Cadastro")]

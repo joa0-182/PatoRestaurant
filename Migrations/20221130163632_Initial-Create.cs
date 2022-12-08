@@ -38,9 +38,7 @@ namespace PatoRestaurant.Migrations
                 {
                     Id = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Discriminator = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Name = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: true)
+                    Name = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ProfilePicture = table.Column<string>(type: "varchar(400)", maxLength: 400, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -121,7 +119,7 @@ namespace PatoRestaurant.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Description = table.Column<string>(type: "varchar(2000)", maxLength: 2000, nullable: false)
+                    Description = table.Column<string>(type: "varchar(2000)", maxLength: 2000, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     EventDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     Image = table.Column<string>(type: "varchar(400)", maxLength: 400, nullable: true)
@@ -333,6 +331,20 @@ namespace PatoRestaurant.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "0d48efda-3e41-4655-ba06-765d4ab7afec", "554f118b-afbf-430e-b105-8b5c4a44f4d7", "Usuário", "USUÁRIO" },
+                    { "4541e22d-40b1-47ea-b38f-290f5a70dc4f", "811fcda3-feb2-457f-b82f-f22c9dafe524", "Administrador", "ADMINISTRADOR" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "ProfilePicture", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "385134ab-36b3-4f7a-a19b-429aa1bc7646", 0, "1785c28b-8f1a-4907-aafe-892de7887566", "admin@patorestaurant.com", true, false, null, "Administrador", "ADMIN@PATORESTAURANT.COM", "ADMIN@PATORESTAURANT.COM", "AQAAAAEAACcQAAAAELQ04pXH8dgkgN4lOcXMV4FwwIvaTQpm4m7veLiD97OvXJgg+PY7sn/wwVJy2bm7ww==", null, false, "\\img\\avatar.png", "48412952", false, "admin@patorestaurant.com" });
+
+            migrationBuilder.InsertData(
                 table: "Category",
                 columns: new[] { "Id", "Banner", "Image", "Name" },
                 values: new object[,]
@@ -355,6 +367,11 @@ namespace PatoRestaurant.Migrations
                     { (byte)3, "Reserva Cancelada" },
                     { (byte)4, "Reserva Reagendada" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { "4541e22d-40b1-47ea-b38f-290f5a70dc4f", "385134ab-36b3-4f7a-a19b-429aa1bc7646" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

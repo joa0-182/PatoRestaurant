@@ -5,232 +5,213 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PatoRestaurant
 build_property.RootNamespace = PatoRestaurant
-build_property.ProjectDir = c:\Users\etec\Documents\PatoRestaurant\
+build_property.ProjectDir = C:\Users\gallo\OneDrive\Área de Trabalho\PatoRestaurant\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\etec\Documents\PatoRestaurant
+build_property.MSBuildProjectDirectory = C:\Users\gallo\OneDrive\Área de Trabalho\PatoRestaurant
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Admin/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Category/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Category/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/etec/Documents/PatoRestaurant/Views/Category/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Category/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Category/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Category/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/About.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Blog.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Contact.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Gallery.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYWxsZXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Menu.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Privacy.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Home/Reservation.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Home/Reservation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXNlcnZhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Product/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Product/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/etec/Documents/PatoRestaurant/Views/Product/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Product/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Product/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Reservation/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Reservation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Reservation/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/etec/Documents/PatoRestaurant/Views/Reservation/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Reservation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Reservation/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Reservation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Reservation/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Reservation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Review/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Review/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Review/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/etec/Documents/PatoRestaurant/Views/Review/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Review/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Review/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Review/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Review/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Review/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/Error.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/_Layout.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/_Settings.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/_Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZXR0aW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/SocialEvent/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/SocialEvent/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsRXZlbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/SocialEvent/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsRXZlbnRcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/etec/Documents/PatoRestaurant/Views/SocialEvent/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/SocialEvent/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsRXZlbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/SocialEvent/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/SocialEvent/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsRXZlbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/SocialEvent/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/SocialEvent/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsRXZlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/StatusReservation/Create.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/StatusReservation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/StatusReservation/Delete.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/StatusReservation/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzUmVzZXJ2YXRpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/StatusReservation/Details.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/StatusReservation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzUmVzZXJ2YXRpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/StatusReservation/Edit.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/StatusReservation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzUmVzZXJ2YXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/StatusReservation/Index.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/StatusReservation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/_ViewImports.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/etec/Documents/PatoRestaurant/Views/_ViewStart.cshtml]
+[C:/Users/gallo/OneDrive/Área de Trabalho/PatoRestaurant/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

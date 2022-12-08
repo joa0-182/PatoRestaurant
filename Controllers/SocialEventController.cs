@@ -1,28 +1,33 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using PatoRestaurant.Data;
-using PatoRestaurant.Models;
+using Microsoft.Extensions.Hosting;
 
 namespace PatoRestaurant.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class SocialEventController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public SocialEventController(ApplicationDbContext context)
+        public SocialEventController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: SocialEvent
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return View(await _context.SocialEvents.ToListAsync());
+              return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var events = await _context.SocialEvents.ToListAsync();
+            return Json(new { data = events });
         }
 
         // GET: SocialEvent/Details/5
@@ -54,10 +59,21 @@ namespace PatoRestaurant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,EventDate,Image")] SocialEvent socialEvent)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,EventDate,Image")] SocialEvent socialEvent, IFormFile file)
         {
             if (ModelState.IsValid)
             {
+                if (file != null)
+                {
+                    string wwwRoot = _hostEnvironment.WebRootPath;
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string newFile = Path.Combine(wwwRoot, @"img\socialevents", fileName);
+                    using (var stream = new FileStream(newFile, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    socialEvent.Image = @"\img\socialevents\" + fileName;
+                }
                 _context.Add(socialEvent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +102,7 @@ namespace PatoRestaurant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(ushort id, [Bind("Id,Name,Description,EventDate,Image")] SocialEvent socialEvent)
+        public async Task<IActionResult> Edit(ushort id, [Bind("Id,Name,Description,EventDate,Image")] SocialEvent socialEvent, IFormFile file)
         {
             if (id != socialEvent.Id)
             {
@@ -95,6 +111,26 @@ namespace PatoRestaurant.Controllers
 
             if (ModelState.IsValid)
             {
+                if (file != null)
+                {
+                    string wwwRoot = _hostEnvironment.WebRootPath;
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string newFile = Path.Combine(wwwRoot, @"img\socialevents", fileName);
+                    using (var stream = new FileStream(newFile, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    if (socialEvent.Image != null)
+                    {
+                        string oldFile = Path.Combine(wwwRoot, socialEvent.Image.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldFile))
+                        {
+                            System.IO.File.Delete(oldFile);
+                        }
+                    }
+                    socialEvent.Image = @"\img\socialevents\" + fileName;
+                }
+
                 try
                 {
                     _context.Update(socialEvent);
@@ -116,41 +152,25 @@ namespace PatoRestaurant.Controllers
             return View(socialEvent);
         }
 
-        // GET: SocialEvent/Delete/5
-        public async Task<IActionResult> Delete(ushort? id)
+        // DELETE: SocialEvent/Delete/5
+        [HttpDelete]
+        public async Task<IActionResult> Delete(ushort id)
         {
-            if (id == null || _context.SocialEvents == null)
-            {
-                return NotFound();
-            }
-
-            var socialEvent = await _context.SocialEvents
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var socialEvent = _context.SocialEvents.Find(id);
             if (socialEvent == null)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Evento não encontrado" });
             }
-
-            return View(socialEvent);
-        }
-
-        // POST: SocialEvent/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(ushort id)
-        {
-            if (_context.SocialEvents == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.SocialEvents'  is null.");
-            }
-            var socialEvent = await _context.SocialEvents.FindAsync(id);
-            if (socialEvent != null)
+            try
             {
                 _context.SocialEvents.Remove(socialEvent);
+                await _context.SaveChangesAsync();
             }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            catch
+            {
+                return Json(new { success = false, message = "Ocorreu um problema inesperado! Avise ao Suporte!" });
+            }
+            return Json(new { success = true, message = "Evento Excluído com Sucesso" });
         }
 
         private bool SocialEventExists(ushort id)

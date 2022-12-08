@@ -3,14 +3,13 @@ dotnet new mvc -f net6.0 --auth Individual --use-local-db
 dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.2
 
 - EntityFrameworkCore - Banco de Dados
-- Identity - Identificação e Autorização de Usuário
+- Identity - Identicação e Autorização de Usuário
 
 Para testar se tem a ferramenta de migração:
     dotnet ef
 
 Para instalar a ferramenta de migração:
     dotnet tool install --global dotnet-ef
-    dotnet tool update --global dotnet-ef
 
 Para criar uma migração:
 1º - No terminal executar um: dotnet build
@@ -21,20 +20,14 @@ Para criar uma migração:
     dotnet ef database update
 
 
-Para realizar o scaffolding do Identity
--- Opcional
+Para realizar um scaffolding do Identity
+-- Passos opcionais
 dotnet aspnet-codegenerator identity -h
-dotnet aspnet-codegenerator identity --listFiles
 
--- 1º Passo - 
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
--- 2º Passo - Determinar as páginas
-dotnet aspnet-codegenerator identity
--dc PatoRestaurant.Data.ApplicationDbContext
-    --files "Account.AccessDenied;
-             Account.Login;
-             Account.Logout;
-             Account.Register"
+-- Instalar o pacote Design
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design;
 
+-- Extrair do pacote Identity as páginas
 dotnet aspnet-codegenerator identity -dc PatoRestaurant.Data.ApplicationDbContext --files "Account.AccessDenied;Account.Login;Account.Logout;Account.Register"
+
 

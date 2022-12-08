@@ -39,17 +39,17 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         builder.Entity<IdentityRole>().HasData(listRoles);
         #endregion
 
-        #region Seed ApplicationUser - Admin
+        #region Seed User - Administrador
         var userId = Guid.NewGuid().ToString();
         var hash = new PasswordHasher<ApplicationUser>();
         builder.Entity<ApplicationUser>().HasData(
-            new ApplicationUser{
+            new ApplicationUser(){
                 Id = userId,
-                Name = "José Antonio Gallo Junior",
-                UserName = "admin@pato.com",
-                NormalizedUserName = "ADMIN@PATO.COM",
-                Email = "admin@pato.com",
-                NormalizedEmail = "ADMIN@PATO.COM",
+                Name = "Administrador",
+                UserName = "admin@patorestaurant.com",
+                NormalizedUserName = "ADMIN@PATORESTAURANT.COM",
+                Email = "admin@patorestaurant.com",
+                NormalizedEmail = "ADMIN@PATORESTAURANT.COM",
                 EmailConfirmed = true,
                 PasswordHash = hash.HashPassword(null, "123456"),
                 SecurityStamp = hash.GetHashCode().ToString(),
@@ -58,11 +58,13 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         );
 
         builder.Entity<IdentityUserRole<string>>().HasData(
-            new IdentityUserRole<string>{
+            new IdentityUserRole<string>()
+            {
                 UserId = userId,
                 RoleId = listRoles[0].Id
             }
         );
+
         #endregion
 
         #region Seed StatusReservation
@@ -89,8 +91,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
                 Name = "Reserva Reagendada"
             }
         };
-        builder.Entity<StatusReservation>()
-            .HasData(listStatusReservation);
+        builder.Entity<StatusReservation>().HasData(listStatusReservation);
         #endregion
 
         #region Seed Category
@@ -129,5 +130,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         };
         builder.Entity<Category>().HasData(listCategory);
         #endregion
+
     }
+
 }
